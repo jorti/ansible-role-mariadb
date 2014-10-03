@@ -6,6 +6,11 @@ MariaDB role for Fedora and CentOS >= 7
 Role Variables
 --------------
 
+mariadb_client_config: "/root/.my.cnf"
+mariadb_entropy_bits: 100
+mariadb_open_firewall: false
+mariadb_remote_root_access: false
+
 
 Example Playbook
 ----------------

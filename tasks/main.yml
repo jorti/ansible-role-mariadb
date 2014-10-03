@@ -13,4 +13,4 @@
   when: cfg.stat.exists is defined and cfg.stat.exists == false
 - name: Open the firewall
   firewalld: service=mysql permanent=true state=enabled
-  when: open_firewall
+  when: mariadb_open_firewall
