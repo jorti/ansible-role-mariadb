@@ -12,6 +12,6 @@ galaxy_info:
     versions:
       -all
   categories:
-  #- database
-  #- database:sql
+  - database
+  - database:sql
 dependencies: []
