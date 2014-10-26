@@ -5,11 +5,16 @@ MariaDB role for Fedora and CentOS >= 7
 
 Role Variables
 --------------
+The default parameters are:
 
+  * mariadb_server_config_dir: "/etc/my.cnf.d"
   * mariadb_client_config: "/root/.my.cnf"
   * mariadb_entropy_bits: 100
   * mariadb_open_firewall: false
   * mariadb_remote_root_access: false
+  * mariadb_innodb_use_barracuda: true
+  * mariadb_character_set: "utf8"
+  * mariadb_collation: "utf8_general_ci"
 
 
 Example Playbook
@@ -27,4 +32,4 @@ GPLv3
 Author Information
 ------------------
 
-https://miceliux.com/apuntesderoot/about/
+https://miceliux.com/about/
