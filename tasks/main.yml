@@ -5,7 +5,7 @@
     - mariadb-server
     - mariadb
 - name: Config MariaDB server
-  template: src=ansible.cnf dest={{ mariadb_server_config_dir }}/ansible.cnf
+  template: src=ansible.cnf.j2 dest={{ mariadb_server_config_dir }}/ansible.cnf
             owner=root group=root mode=0644 backup=yes
 - name: Enable and start MariaDB service
   service: name=mariadb enabled=yes state=started

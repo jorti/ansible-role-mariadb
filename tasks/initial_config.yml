@@ -19,5 +19,5 @@
 - name: Reload privileges
   shell: mysql -e "FLUSH PRIVILEGES;"
 - name: Configure root profile
-  template: src=my.cnf dest={{ mariadb_client_config }} owner=root group=root mode=0600
+  template: src=my.cnf.j2 dest={{ mariadb_client_config }} owner=root group=root mode=0600
             backup=yes
