@@ -32,4 +32,4 @@ GPLv3
 Author Information
 ------------------
 
-https://miceliux.com/about/
+https://apuntesderootblog.wordpress.com/
